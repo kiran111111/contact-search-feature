@@ -1,0 +1,136 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color : black;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 2px solid black;
+  padding: 0.6em 1.2em;
+  font-size: 1.3em;
+  margin: 10px 0;
+  font-weight: 500;
+  font-family: inherit;
+  color: rgb(16, 150, 223);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.filter-layout {
+  display: flex;
+  justify-content: space-between; /* Ensures containers are far apart */
+}
+
+.filter-container-left {
+  width: 50%; /* Adjust as needed for your layout */
+}
+
+.filter-container-right {
+  width: 50%; /* Adjust as needed for your layout */
+  display: flex;
+  flex-direction: column; /* Stack filter rows vertically */
+  align-items: flex-end; /* Align all child elements to the right */
+}
+
+
+.filter-container{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.filter-rows{
+  display: flex;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.filters{
+  display: flex;
+  flex-direction: column;
+}
+
+label{
+  font-size: 1.2em;
+}
+
+input, select{
+  font-size: 1.2em;
+  border-radius: 6px;
+  padding: 10px;
+  border-width: 2px;
+}
+
+ /* table styles */
+
+ table{
+  border-collapse: collapse;
+  margin-top: 20px;
+ }
+
+ tbody tr {
+  border: 1px  solid #ccc; /* Add border only to the table rows */
+  border-right: 0px;
+  border-left: 0px;
+}
+
+thead tr {
+  border: none; /* Ensure no border is applied to header rows */
+}
+
+th{
+  color : rgb(71, 71, 71);
+}
+
+td, th {
+  padding: 10px; /* Optional: Add padding for better spacing */
+  text-align: left; /* Optional: Align text to the left */
+}
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
