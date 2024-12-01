@@ -1,10 +1,9 @@
 # Contact Search Feature (React + TypeScript + Vite)
 
-Node version used : v20.18.0
-NPM version used : v10.8.2
+* Node version used : v20.18.0
+* NPM version used : v10.8.2
 
 1. The Contact Search feature allows you to filter the contacts based upon search filters.
-
 
 2. Run " npm install " to install all the dependencies
 
