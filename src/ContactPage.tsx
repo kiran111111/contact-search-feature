@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 
+// Contact interface
 interface Contact {
     id: number;
     firstname: string;
@@ -14,6 +15,7 @@ interface Contact {
     address : string;
 }
 
+// Test data
 const contacts: Contact[] = [
     {
       id: 1,
@@ -142,6 +144,7 @@ const contacts: Contact[] = [
 const ContactPage: React.FC = () => {
 
 
+    // State to manage selected contact
     const [selectedContactId, setSelectedContactId] = useState<number | null>(null);
     const handleRowSelect = (id: number) => {
       setSelectedContactId((prev) => (prev === id ? null : id)); // Toggle selection
@@ -149,6 +152,7 @@ const ContactPage: React.FC = () => {
     const selectedContact = contacts.find((contact) => contact.id === selectedContactId);
 
 
+    // State to manage filters
     const [filters, setFilters] = useState({
         firstname: "",
         dob : "",
@@ -194,7 +198,6 @@ const ContactPage: React.FC = () => {
     };
     
 
-
     // Calculate pagination
     const indexOfLastRow = currentPage * rowsPerPage;
     const indexOfFirstRow = indexOfLastRow - rowsPerPage;
@@ -212,7 +215,7 @@ const ContactPage: React.FC = () => {
 
     return (
         <div>
-            <h1>Contact Page</h1>
+            <h1>Contact Search Feature</h1>
             <h2>Choose a Contact</h2>
             <h3>Search for a Contact</h3>
 
