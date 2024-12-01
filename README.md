@@ -1,4 +1,4 @@
-# Contact Search Featuer (React + TypeScript + Vite)
+# Contact Search Feature (React + TypeScript + Vite)
 
 
 1. The Contact Search feature allows you to filter the contacts based upon search filters.
