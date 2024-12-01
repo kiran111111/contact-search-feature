@@ -421,7 +421,6 @@ const ContactPage: React.FC = () => {
            ) : "None"}
            
 
-
         </div>
     );
 };
