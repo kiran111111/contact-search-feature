@@ -195,14 +195,11 @@ const ContactPage: React.FC = () => {
     
 
 
-  
-
     // Calculate pagination
     const indexOfLastRow = currentPage * rowsPerPage;
     const indexOfFirstRow = indexOfLastRow - rowsPerPage;
     const currentRows = filteredContacts.slice(indexOfFirstRow, indexOfLastRow);
 
-    console.log(filteredContacts.length)
     const totalPages = Math.ceil( (filteredContacts.length / rowsPerPage) );
 
     // Pagination handler
@@ -316,7 +313,6 @@ const ContactPage: React.FC = () => {
                         </div>
                     </div>
                 </div>
-
 
             </div>
 
