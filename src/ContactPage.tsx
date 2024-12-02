@@ -80,7 +80,6 @@ const ContactPage: React.FC = () => {
     const indexOfLastRow = currentPage * rowsPerPage;
     const indexOfFirstRow = indexOfLastRow - rowsPerPage;
     const currentRows = filteredContacts.slice(indexOfFirstRow, indexOfLastRow);
-
     const totalPages = Math.ceil( (filteredContacts.length / rowsPerPage) );
 
     // Pagination handler

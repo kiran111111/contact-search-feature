@@ -11,5 +11,5 @@
 
 4. Developed the project using vite due to its build performance and faster development speed.
 
-5. The test json data includes 10 rows. For showing the functionality of pagination - I have shown 3 rows per page.
+5. The test json data includes 10 rows in the contacts.json file. For showing the functionality of pagination - I have shown 3 rows per page.
 
