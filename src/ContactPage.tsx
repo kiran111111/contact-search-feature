@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-
+// test data
+import contactsData from './contacts.json';
 
 // Contact interface
 interface Contact {
@@ -16,133 +17,10 @@ interface Contact {
 }
 
 // Test data
-const contacts: Contact[] = [
-    {
-      id: 1,
-      firstname: "Desiree",
-      lastname: "Harper",
-      email: "shermanangela@gmail.com",
-      phone: "9934345355",
-      city: "Russellchester",
-      state: "GA",
-      zip: "35323",
-      dob: "1989-10-24",
-      address: "Unit 9459 Box 8886, DPO AE 13590",
-    },
-    {
-      id: 2,
-      firstname: "Sarah",
-      lastname: "Martin",
-      email: "xrojas@james-king.com",
-      phone: "2345435435",
-      city: "Port Adam",
-      state: "TN",
-      zip: "97341",
-      dob: "2007-09-04",
-      address: "9774 Kaitlyn Ports, Chambersshire, OK 83321",
-    },
-    {
-      id: 3,
-      firstname: "Jackie",
-      lastname: "Floyd",
-      email: "saraelliott@gmail.com",
-      phone: "23423423432",
-      city: "South Nicoleshire",
-      state: "AK",
-      zip: "66576",
-      dob: "1924-11-09",
-      address: "PSC 3383, Box 0689, APO AP 33453",
-    },
-    {
-      id: 4,
-      firstname: "Jennifer",
-      lastname: "Ryan",
-      email: "hesterelizabeth@pineda.com",
-      phone: "2342342344",
-      city: "Shorttown",
-      state: "CA",
-      zip: "05567",
-      dob: "1988-04-05",
-      address: "884 Patricia Station, Moranchester, VA 62891",
-    },
-    {
-      id: 5,
-      firstname: "Jacob",
-      lastname: "Jones",
-      email: "jthompson@ortega.com",
-      phone: "3423423444",
-      city: "North Christopher",
-      state: "ZZ",
-      zip: "50558",
-      dob: "1940-02-12",
-      address: "5847 Joshua Mountain Suite 168, West Laura, NY 28130",
-    },
-    {
-      id: 6,
-      firstname: "Christopher",
-      lastname: "Elliott",
-      email: "alisha92@fisher-davis.com",
-      phone: "23423423423",
-      city: "Lake Jeremystad",
-      state: "NZ",
-      zip: "20469",
-      dob: "1942-06-09",
-      address: "382 Allen Mountains Suite 053, West Pamelaborough, IA 80021",
-    },
-    {
-      id: 7,
-      firstname: "Gregory",
-      lastname: "Rodriguez",
-      email: "gwagner@clark-glenn.info",
-      phone: "2342342342",
-      city: "Daltonton",
-      state: "ZP",
-      zip: "57384",
-      dob: "1937-08-30",
-      address: "197 Park Plaza, Lake Gregoryside, IA 18858",
-    },
-    {
-      id: 8,
-      firstname: "Kevin",
-      lastname: "Villarreal",
-      email: "justin63@gmail.com",
-      phone: "234234234324",
-      city: "Thomasburgh",
-      state: "PL",
-      zip: "72062",
-      dob: "1989-11-29",
-      address: "69426 Carpenter Junction Apt. 800, Lake Nancy, WI 61556",
-    },
-    {
-      id: 9,
-      firstname: "Hector",
-      lastname: "Graves",
-      email: "sarahbarrera@yahoo.com",
-      phone: "2342342342",
-      city: "Jeffreymouth",
-      state: "NY",
-      zip: "65927",
-      dob: "1981-03-29",
-      address: "936 Thompson Crescent, Huntermouth, ND 16809",
-    },
-    {
-      id: 10,
-      firstname: "Audrey",
-      lastname: "Lawson",
-      email: "jeffreyhiggins@gibson.info",
-      phone: "823424234234",
-      city: "East Kristi",
-      state: "NH",
-      zip: "76164",
-      dob: "1967-01-16",
-      address: "86586 Walls Flats, East Deborah, IN 90395",
-    },
-  ];
+const contacts: Contact[] = contactsData;
   
-    
 
 const ContactPage: React.FC = () => {
-
 
     // State to manage selected contact
     const [selectedContactId, setSelectedContactId] = useState<number | null>(null);
